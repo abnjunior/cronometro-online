@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cronômetro Online Gratuito | Simples, Rápido e Preciso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main class="container">
+
+  <header class="top">
+    <h1>Cronômetro</h1>
+
+    <button id="fullscreenBtn" class="icon-btn" title="Tela cheia">
+      ⛶
+    </button>
+  </header>
+
+  <section class="chrono-wrapper">
+    <div class="circle">
+
+      <div class="orbit" id="orbit">
+        <div class="dot"></div>
+      </div>
+
+      <span id="time">0.<span class="ms">00</span></span>
+
+    </div>
+  </section>
+
+  <section class="controls">
+    <button id="startPause" class="btn btn-main">▶</button>
+    <button id="reset" class="btn btn-reset">⟲</button>
+  </section>
+
+  <section class="footer">
+    <span class="credit">Desenvolvido por Audisio Junior</span>
+    <a href="#" id="openChangelog" class="changelog-link">versões</a>
+  </section>
+
+</main>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button id="closeModal" class="close-modal">✕</button>
+    <iframe src="pages/changelog.html" frameborder="0"></iframe>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
